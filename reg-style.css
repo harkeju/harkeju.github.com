@@ -42,28 +42,26 @@ The designs were created to the following widths:
 }
 
 body {
-  display: flex;
   background-image: url("/images/bg-intro-desktop.png");
   background-size: 100%;
   background-color: #d76854;
   max-width: 1144px;
   height: 100vh;
   place-items: center;
-  flex-direction: column;
   margin: auto;
   font-size: 16px;
+  padding: 0 30px 60px;
 }
 
 main {
-  display: flex;
   width: 100%;
-  margin: auto;
-  place-items: center;
+  margin: 100px auto;
+  text-align: center;
 }
 
 .left-container {
   color: #fff;
-  width: 90%;
+  width: 100%;
   padding-right: 40px;
 }
 
@@ -95,13 +93,14 @@ p {
 
 .secondary-button {
   background: hsl(248, 32%, 49%);
-  padding: 15px;
+  padding: 15px 30%;
   text-decoration: none;
   border-radius: 5px;
   color: #fff;
   text-align: center;
   width: 100%;
   box-shadow: 0px 8px 2px rgba(16, 16, 16, 0.23);
+  margin-top: 60px;
 }
 
 .secondary-button:hover {
@@ -160,4 +159,24 @@ small {
 small span {
   color: hsl(0, 100%, 74%);
   font-weight: 600;
+}
+
+@media only screen and (min-width: 1444px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 0;
+  }
+
+  main {
+    margin: 0 auto;
+    display: flex;
+    text-align: left;
+    place-items: center;
+  }
+
+  .secondary-button {
+    padding: 15px 30px;
+  }
 }
