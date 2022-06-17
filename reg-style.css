@@ -46,7 +46,6 @@ body {
   background-size: 100%;
   background-color: #d76854;
   max-width: 1144px;
-  height: 100vh;
   place-items: center;
   margin: auto;
   font-size: 16px;
@@ -62,7 +61,6 @@ main {
 .left-container {
   color: #fff;
   width: 100%;
-  padding-right: 40px;
 }
 
 h1 {
@@ -173,6 +171,7 @@ small span {
     display: flex;
     place-items: center;
     padding: 0;
+    height: 100vh;
   }
 
   main {
@@ -185,5 +184,9 @@ small span {
 
   .secondary-button {
     padding: 15px 30px;
+  }
+
+  .left-container {
+    padding-right: 40px;
   }
 }
