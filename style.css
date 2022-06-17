@@ -11,6 +11,12 @@ header {
   margin: auto;
 }
 
+footer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
 .left-container,
 .right-container {
   max-height: 100px;
@@ -156,6 +162,12 @@ div {
     flex-direction: column;
     width: 80%;
   }
+
+  footer {
+    flex-direction: column;
+    width: 80%;
+  }
+
   .column1,
   .column2,
   .column3 {
