@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reg-style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="left-container">
+        <h1>
+          Learn to code by <br />
+          watching others
+        </h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="right-container">
+        <div class="secondary-button">
+          <a href="#">
+            <span> Try it free 7 days </span> then $20/mo. thereafter</a
+          >
+        </div>
+
+        <form action="action-page.php" class="form-container">
+          <label for="fname"></label>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="First Name"
+            required
+            minlength="3"
+            maxlength="30"
+          />
+
+          <label for="lname"></label>
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Last Name"
+            required
+            minlength="3"
+            maxlength="30"
+          />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+            pattern="[?.=\d](a-z)+(.-&_)+[?.=\d](a-z)+@[?.=\d](a-z)+(.-"
+            minlength="5"
+            maxlength="128"
+          />
+
+          <label for="password"></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+            pattern="regex"
+            minlength="8"
+            maxlength="128"
+          />
+
+          <input type="submit" value="CLAIM YOUR FREE TRIAL" />
+
+          <div class="center-align">
+            <small>
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </small>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
