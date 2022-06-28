@@ -9,6 +9,7 @@ header {
   display: flex;
   width: 80%;
   margin: auto;
+  height: 150px;
 }
 
 footer {
@@ -26,7 +27,7 @@ footer {
 main {
   display: flex;
   place-items: center;
-  height: 100vh;
+  height: calc(100vh - 150px);
 }
 
 .container {
