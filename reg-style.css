@@ -146,6 +146,10 @@ input[type="submit"] {
   letter-spacing: 1px;
 }
 
+input[type="submit"]:hover {
+  background: hsl(124, 59%, 51%);
+}
+
 .center-align {
   text-align: center;
 }
